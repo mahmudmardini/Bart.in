@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1771031-158E-4305-8396-9E6BD42B0620}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bartin</RootNamespace>
+    <AssemblyName>Bartin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\mahmo\source\repos\Bartin\Bartin\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Bartin.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Toma4025-Rumax-Filetype-dat.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="360dereceli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="360dereceli.Designer.cs">
+      <DependentUpon>360dereceli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bartin_lable_bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bartin_lable_bilgileri.Designer.cs">
+      <DependentUpon>bartin_lable_bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genelBilgileriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genelBilgileriForm.Designer.cs">
+      <DependentUpon>genelBilgileriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iletisim.Designer.cs">
+      <DependentUpon>iletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maps.Designer.cs">
+      <DependentUpon>maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciClubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciClubs.Designer.cs">
+      <DependentUpon>ogrenciClubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehirForm.Designer.cs">
+      <DependentUpon>sehirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeForm.Designer.cs">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehir_amasra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehir_amasra.Designer.cs">
+      <DependentUpon>sehir_amasra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehir_bartin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehir_bartin.Designer.cs">
+      <DependentUpon>sehir_bartin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehir_ulus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehir_ulus.Designer.cs">
+      <DependentUpon>sehir_ulus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehir_kurucasile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehir_kurucasile.Designer.cs">
+      <DependentUpon>sehir_kurucasile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uniForm.Designer.cs">
+      <DependentUpon>uniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="360dereceli.resx">
+      <DependentUpon>360dereceli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bartin_lable_bilgileri.resx">
+      <DependentUpon>bartin_lable_bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genelBilgileriForm.resx">
+      <DependentUpon>genelBilgileriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iletisim.resx">
+      <DependentUpon>iletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maps.resx">
+      <DependentUpon>maps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciClubs.resx">
+      <DependentUpon>ogrenciClubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehirForm.resx">
+      <DependentUpon>sehirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeForm.ar.resx">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeForm.resx">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehir_amasra.resx">
+      <DependentUpon>sehir_amasra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehir_bartin.resx">
+      <DependentUpon>sehir_bartin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehir_ulus.resx">
+      <DependentUpon>sehir_ulus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehir_kurucasile.resx">
+      <DependentUpon>sehir_kurucasile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uniForm.resx">
+      <DependentUpon>uniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxVisioViewer">
+      <Guid>{BA35B84E-A623-471B-8B09-6D72DD072F25}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VisioViewer">
+      <Guid>{BA35B84E-A623-471B-8B09-6D72DD072F25}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound-on-icon.png" />
+    <None Include="Resources\Sound-off-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Toma4025-Rumax-Filetype-dat.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
